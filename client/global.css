@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 217 91% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 217 91% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 91% 22%;
+
+    --primary: 217 91% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 91% 97%;
+    --secondary-foreground: 217 91% 28%;
+
+    --muted: 217 91% 95%;
+    --muted-foreground: 217 20% 46.9%;
+
+    --accent: 267 84% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 91% 93%;
+    --input: 217 91% 95%;
+    --ring: 217 91% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 217 91% 5%;
+    --foreground: 217 91% 95%;
+
+    --card: 217 91% 8%;
+    --card-foreground: 217 91% 95%;
+
+    --popover: 217 91% 8%;
+    --popover-foreground: 217 91% 95%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 217 91% 5%;
+
+    --secondary: 217 50% 15%;
+    --secondary-foreground: 217 91% 95%;
+
+    --muted: 217 50% 12%;
+    --muted-foreground: 217 20% 65%;
+
+    --accent: 267 84% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 50% 20%;
+    --input: 217 50% 15%;
+    --ring: 217 91% 60%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
